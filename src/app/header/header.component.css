@@ -1,4 +1,7 @@
 #titleHeader{
     background-color: crimson;
     height: 100px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
