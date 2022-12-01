@@ -20,4 +20,7 @@ export class CrudService {
   consultarEmpleado(){
     return this.conexionservicio.get(this.API+"?listar=1");
   }
+  borrarEmpleado(id:any):Observable<any>{
+    return this.conexionservicio.get(this.API+"?borrar=1",id);
+  }
 }

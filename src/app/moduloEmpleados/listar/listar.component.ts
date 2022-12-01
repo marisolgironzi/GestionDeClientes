@@ -20,4 +20,17 @@ export class ListarComponent {
       this.empleados=respuesta;
     });
   }
+
+  borrarRegistro(id:any, iControl:any){
+    console.log(id);
+    console.log(iControl);
+
+    if(window.confirm("¿Confirma que desea borrar este empleado?")){
+      this.servicio.borrarEmpleado(id).subscribe(
+        (respuesta)=>{
+          this.empleados.splice(iControl,1);
+        }
+      );
+    }
+  }
 }
