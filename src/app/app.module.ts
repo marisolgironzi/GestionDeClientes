@@ -10,6 +10,10 @@ import { AgregarComponent } from './moduloEmpleados/agregar/agregar.component';
 import { EditarComponent } from './moduloEmpleados/editar/editar.component';
 import { ListarComponent } from './moduloEmpleados/listar/listar.component';
 
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http';
+import { NgForm } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +26,10 @@ import { ListarComponent } from './moduloEmpleados/listar/listar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,26 @@
-<p>listar works!</p>
+<div class="container-fluid">
+    <div class="row" id="tablaEmpleados">
+        <div class="table-responsive">
+            <h4> Listado de empleados </h4>
+            <table class="table table-primary">
+                <thead>
+                    <tr>
+                        <th scope="col">ID empleado</th>
+                        <th scope="col">Nombre completo</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let empleado of empleados;let iControl=index">
+                        <td scope="row">{{ empleado.id }}</td>
+                        <td>{{ empleado.nombre }}</td>
+                        <td>{{ empleado.correo }}</td>
+                        <td><a href="">Editar</a> | <a href="">Borrar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+    </div>
+</div>
