@@ -49,6 +49,9 @@
     -webkit-overflow-scrolling: touch;
   }
 
+@import url(./../../styles.css);
+
 #contFooter{
-  background-color: crimson;
+  color: beige;
+  background-color: var(--fondo-color);
 }

@@ -1,7 +1,10 @@
+@import url(./../../styles.css);
+
 #titleHeader{
-    background-color: crimson;
-    height: 100px;
-    flex-wrap: nowrap;
+    display: flex;
     justify-content: center;
     align-items: center;
+    color: beige;
+    background-color: var(--fondo-color);
+    height: 100px;
 }
