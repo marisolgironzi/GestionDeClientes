@@ -1,6 +1,6 @@
 <div class="container-fluid" id="editar">
     <div class="row" id="editarEmpleado">
-        <form>
+        <form [formGroup]="formularioempleado" (ngSubmit)="enviarInfo()">
             <h4> Editar empleado </h4>
             <br>
             <div class="input-group input-group-sm mb-3" id="nombre">
@@ -11,7 +11,7 @@
                 <span class="input-group-text" id="inputGroup-sizing-sm">Ingrese su correo</span>
                 <input type="email" class="form-control" formControlName="correo" name="correo" id="email" aria-describedby="emailHelpId" placeholder="usuario@mail.com">
             </div>
-            <button type="submit" class="btn btn-primary" id="btnEnviar" name="btnEnviar">Guardar cambios</button>
+            <button type="submit" class="btn btn-primary" id="btnGuardar" name="btnGuardar">Guardar cambios</button>
         </form>
     </div>
 </div>

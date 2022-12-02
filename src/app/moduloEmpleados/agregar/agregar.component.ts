@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder} from '@angular/forms';
 import { CrudService } from 'src/app/servicios/crud.service';
 
@@ -7,7 +7,7 @@ import { CrudService } from 'src/app/servicios/crud.service';
   templateUrl: './agregar.component.html',
   styleUrls: ['./agregar.component.css']
 })
-export class AgregarComponent {
+export class AgregarComponent implements OnInit {
   formularioempleado: FormGroup;
 
   constructor(
@@ -21,6 +21,9 @@ export class AgregarComponent {
         correo: ['']
       }
     )
+  }
+
+  ngOnInit(): void {
   }
 
   enviarInfo() {
